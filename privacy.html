@@ -22,12 +22,12 @@
 
     <section>
       <h2>What Laitch accesses</h2>
-      <p>When the user connects a Google account, Laitch requests two permissions:</p>
+      <p>When the user connects a Google account, Laitch requests one permission:</p>
       <ul>
         <li><strong>Gmail, read-only</strong> (<code>gmail.readonly</code>): to read recent messages and find a
-          verification code or confirmation link that a job site sent while the user is applying there.</li>
-        <li><strong>Email address</strong> (<code>userinfo.email</code>): to know which mailbox was connected, so
-          Laitch reads the mailbox whose address matches the one used on the application.</li>
+          verification code or confirmation link that a job site sent while the user is applying there. Laitch
+          also reads the mailbox's own address from its Gmail profile, so it uses the mailbox whose address
+          matches the one used on the application.</li>
       </ul>
       <p>Laitch cannot send, delete, move, label or otherwise change email.</p>
     </section>
